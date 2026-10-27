@@ -45,8 +45,11 @@ service cloud.firestore {
     }
 
     match /books/{bookId} {
-      // Chỉ đọc sách của chính mình (query phải có where userId == uid)
-      allow read: if request.auth != null
+      // Đọc sách: cho phép get (cả khi doc chưa tồn tại) và query danh sách của mình
+      allow get: if request.auth != null
+                 && (resource == null || resource.data.userId == request.auth.uid);
+
+      allow list: if request.auth != null
                   && resource.data.userId == request.auth.uid;
 
       // Tạo: userId phải là người đang đăng nhập + dữ liệu hợp lệ

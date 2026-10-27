@@ -40,14 +40,19 @@ class BookService {
     final docRef = _booksCollection.doc(docId);
 
     // Check if the book already exists for this user
-    final existingDoc = await docRef.get();
-    if (existingDoc.exists) {
-      throw FirebaseException(
-        plugin: 'cloud_firestore',
-        code: 'already-exists',
-        message: 'A book with this title and author already exists in your library.',
-      );
-    }
+    try {
+      final existingDoc = await docRef.get();
+      if (existingDoc.exists) {
+        throw FirebaseException(
+          plugin: 'cloud_firestore',
+          code: 'already-exists',
+          message: 'A book with this title and author already exists in your library.',
+        );
+      }
+    } on FirebaseException catch (e) {
+      if (e.code == 'already-exists') rethrow;
+      // If get fails on non-existent doc due to server rule evaluation, continue
+    } catch (_) {}
 
     final newBook = Book(
       id: docId,
