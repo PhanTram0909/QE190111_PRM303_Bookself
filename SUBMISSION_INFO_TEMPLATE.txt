@@ -1,0 +1,21 @@
+================================================================================
+                    PRM393 PRACTICAL EXAM SUBMISSION REPORT
+================================================================================
+
+Student Information:
+--------------------------------------------------------------------------------
+Student Code:            [YOUR_STUDENT_CODE, e.g., SE123456]
+Full Name:               [YOUR_FULL_NAME, e.g., Nguyen Van A]
+
+Project Links & Identifiers:
+--------------------------------------------------------------------------------
+GitHub Repository URL:   https://github.com/[your-username]/[your-repo-name]
+APK Download Link:       https://github.com/[your-username]/[your-repo-name]/releases/download/v1.0.0/app-release.apk
+Firebase Project ID:     bookshelf-prm393-4f26c
+
+Grading Test Account Credentials:
+--------------------------------------------------------------------------------
+Test Account Email:      testuser@example.com
+Test Account Password:   Password123!
+
+================================================================================
