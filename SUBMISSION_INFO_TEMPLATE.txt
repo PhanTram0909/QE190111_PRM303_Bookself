@@ -4,13 +4,13 @@
 
 Student Information:
 --------------------------------------------------------------------------------
-Student Code:            [YOUR_STUDENT_CODE, e.g., SE123456]
-Full Name:               [YOUR_FULL_NAME, e.g., Nguyen Van A]
+Student Code:            QE190111
+Full Name:               Phan Bảo Trâm
 
 Project Links & Identifiers:
 --------------------------------------------------------------------------------
-GitHub Repository URL:   https://github.com/[your-username]/[your-repo-name]
-APK Download Link:       https://github.com/[your-username]/[your-repo-name]/releases/download/v1.0.0/app-release.apk
+GitHub Repository URL:   https://github.com/PhanTram0909/QE190111_PRM303_Bookself
+APK Download Link:       https://github.com/PhanTram0909/QE190111_PRM303_Bookself/releases/download/v1.0.0/app-release.apk
 Firebase Project ID:     bookshelf-prm393-4f26c
 
 Grading Test Account Credentials:
